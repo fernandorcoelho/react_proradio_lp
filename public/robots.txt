@@ -1,3 +1,23 @@
-# https://www.robotstxt.org/robotstxt.html
+# Instruções para todos os bots de mecanismos de busca
 User-agent: *
-Disallow:
+# Permitir o acesso a todas as páginas
+Allow: /
+
+# Bloquear páginas desnecessárias para o SEO
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /settings/
+Disallow: /private/
+
+# Sitemap para facilitar a indexação
+Sitemap: https://proradiovet.com.br/sitemap.xml
+
+# Instruções específicas para certos bots (exemplo: Googlebot)
+User-agent: Googlebot
+Allow: /
+
+# Bloquear parâmetros de URL que geram conteúdo duplicado ou irrelevante
+Disallow: /*?sessionid
+Disallow: /*?ref
+Disallow: /*?utm_source

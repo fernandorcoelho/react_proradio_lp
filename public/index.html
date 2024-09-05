@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    
+    <!-- Melhorando o SEO e a acessibilidade -->
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="ProRadio Vet - Serviços especializados em Medicina Veterinária Diagnóstica para animais de pequeno e grande porte, com exames por imagem e análises laboratoriais." />
+    
+    <!-- Adicionando metatags relevantes para SEO -->
+    <meta name="keywords" content="medicina veterinária, veterinária diagnóstica, exames por imagem, análises laboratoriais, veterinário, animais, ProRadio Vet" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="ProRadio Vet" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Dados estruturados usando JSON-LD para melhorar SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ProRadio Vet",
+        "url": "https://proradiovet.com.br",
+        "logo": "%PUBLIC_URL%/logo192.png",
+        "sameAs": [
+          "https://www.facebook.com/proradiovet",
+          "https://www.instagram.com/proradiovet"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+55-11-1234-5678",
+          "contactType": "Customer Service"
+        },
+        "description": "Serviços especializados em Medicina Veterinária Diagnóstica, incluindo exames por imagem e análises laboratoriais para animais de pequeno e grande porte."
+      }
+    </script>
+
+    <!-- Favicons para melhor suporte de ícones em diferentes plataformas -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Título otimizado para SEO -->
+    <title>ProRadio Vet - Medicina Veterinária Diagnóstica Especializada</title>
+
+    <!-- Open Graph para melhor compartilhamento em redes sociais -->
+    <meta property="og:title" content="ProRadio Vet - Medicina Veterinária Diagnóstica Especializada" />
+    <meta property="og:description" content="Oferecemos serviços de Medicina Veterinária Diagnóstica com exames por imagem e análises laboratoriais para animais." />
+    <meta property="og:url" content="https://proradiovet.com.br" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card para compartilhamento otimizado no Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ProRadio Vet - Medicina Veterinária Diagnóstica Especializada" />
+    <meta name="twitter:description" content="Serviços de diagnóstico veterinário para animais, com foco em exames por imagem e análises laboratoriais." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Você precisa habilitar o JavaScript para rodar este aplicativo.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
