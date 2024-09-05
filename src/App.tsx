@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blue-500 p-4 text-center text-white">
+      <h1 className="text-4xl font-bold">
+        Bem-vindo ao projeto react_proradio_lp!
+      </h1>
+      <p className="mt-2">
+        Este projeto utiliza React, TypeScript e TailwindCSS.
+      </p>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
